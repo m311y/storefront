@@ -21,6 +21,7 @@ namespace storefront.Controllers
                     new ItemViewModel { ItemId = 3, ItemName = "Item 3", ItemPrice = 12.99m },
                 }
             };
+            ItemList.TotalItems = ItemList.Items.Count;
             return View(ItemList);
         }
     }
