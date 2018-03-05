@@ -155,6 +155,8 @@
     </Compile>
     <Compile Include="Models\ItemListViewModel.cs" />
     <Compile Include="Models\ItemViewModel.cs" />
+    <Compile Include="Models\UserListViewModel.cs" />
+    <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +197,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Item\Index.cshtml" />
+    <Content Include="Views\User.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
