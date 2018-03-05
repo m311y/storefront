@@ -7,6 +7,7 @@ namespace storefront.Models
 {
     public class UserListViewModel
     {
-        public List<UserViewModel> Items { get; set; }
+        public List<UserViewModel> Users { get; set; }
+        public int TotalUsers { get; set; }
     }
 }
