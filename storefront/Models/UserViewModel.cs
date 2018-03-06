@@ -11,6 +11,7 @@ namespace storefront.Models
         public string UserFirstName { get; set; }
         public string UserLastName { get; set; }
         public string UserEmail { get; set; }
+        public string UserFullName => UserFirstName + " " + UserLastName;
         public string UserDetail => UserFirstName + " " + UserLastName + " " + UserEmail;
     }
 }
