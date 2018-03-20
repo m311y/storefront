@@ -10,7 +10,7 @@ namespace storefront.Models
 {
     public partial class ShoppingCart
     {
-        storefrontContext db = new storefrontContext();
+        StoreFrontContext db = new StoreFrontContext();
 
         public string ShoppingCartId { get; set; }
 

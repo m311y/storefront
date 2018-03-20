@@ -8,10 +8,10 @@ using storefront.Models;
 
 namespace storefront.DAL
 {
-    public class storefrontContext : DbContext
+    public class StoreFrontContext : DbContext
 
     {
-        public storefrontContext() : base("storefront")
+        public StoreFrontContext() : base("storefront")
         {
 
         }

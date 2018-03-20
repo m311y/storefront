@@ -12,7 +12,7 @@ namespace storefront.Controllers
     public class StoreFrontController : Controller
     {
 
-        private storefrontContext db = new storefrontContext();
+        private StoreFrontContext db = new StoreFrontContext();
         // GET: StoreFront
         public ActionResult Index(int? id)
         {

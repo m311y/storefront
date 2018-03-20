@@ -13,7 +13,7 @@ namespace storefront.Controllers
 {
     public class CategoriesController : Controller
     {
-        private storefrontContext db = new storefrontContext();
+        private StoreFrontContext db = new StoreFrontContext();
 
         // GET: Categories
         public ActionResult Index()
