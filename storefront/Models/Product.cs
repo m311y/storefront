@@ -17,6 +17,11 @@ namespace storefront.Models
         [MaxLength(45, ErrorMessage = "The maximum length must be upto 45 characters only")]
         public string Name { get; set; }
 
+        internal static object ToList()
+        {
+            throw new NotImplementedException();
+        }
+
         [RegularExpression(@"^\d+.\d{0,2}$", ErrorMessage = "Has to be decimal with two decimal points")]
         [Range(0, 5, ErrorMessage = "The maximum possible value should be upto 5 digits")]
         public Decimal Price { get; set; }
@@ -29,8 +34,7 @@ namespace storefront.Models
         public DateTime LastUpdated { get; set; }
 
         public int CategoryId { get; set; }
-
-        public virtual Category Category { get; set; }
+        
 
         public virtual ICollection<OrderedProduct> OrderedProducts { get; set; }
 

@@ -18,8 +18,8 @@ namespace storefront.Controllers
         // GET: Products
         public ActionResult Index()
         {
-            var products = db.Products.Include(p => p.Category);
-            return View(products.ToList());
+          
+            return View(Product.ToList());
         }
 
         // GET: Products/Details/5
@@ -40,7 +40,7 @@ namespace storefront.Controllers
         // GET: Products/Create
         public ActionResult Create()
         {
-            ViewBag.CategoryId = new SelectList(db.Categories, "Id", "Name");
+          
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace storefront.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CategoryId = new SelectList(db.Categories, "Id", "Name", product.CategoryId);
+           
             return View(product);
         }
 
@@ -73,7 +73,7 @@ namespace storefront.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CategoryId = new SelectList(db.Categories, "Id", "Name", product.CategoryId);
+           
             return View(product);
         }
 
@@ -89,7 +89,7 @@ namespace storefront.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CategoryId = new SelectList(db.Categories, "Id", "Name", product.CategoryId);
+           
             return View(product);
         }
 

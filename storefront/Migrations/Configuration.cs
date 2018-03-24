@@ -11,12 +11,7 @@ namespace storefront.Migrations
 
         protected override void Seed(storefront.DAL.StoreFrontContext context)
         {
-            context.Categories.AddOrUpdate(x => x.Id,
-        new Category() { Id = 1, Name = "Fashion" },
-        new Category() { Id = 2, Name = "Home" },
-        new Category() { Id = 3, Name = "Grocery" },
-        new Category() { Id = 4, Name = "Health" }
-        );
+      
 
             context.Products.AddOrUpdate(x => x.Id,
         new Product() { Id = 1, Name = "Shirt" },

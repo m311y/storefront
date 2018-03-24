@@ -149,12 +149,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
-    <Compile Include="Controllers\CatagoriesController.cs" />
     <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
-    <Compile Include="Controllers\StoreFrontController.cs" />
     <Compile Include="DAL\StoreFrontContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -165,7 +163,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
-    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerOrder.cs" />
     <Compile Include="Models\OrderedProduct.cs" />
@@ -207,11 +204,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Accounts\ChangePassword.cshtml" />
-    <Content Include="Views\Catagories\Create.cshtml" />
-    <Content Include="Views\Catagories\Delete.cshtml" />
-    <Content Include="Views\Catagories\Details.cshtml" />
-    <Content Include="Views\Catagories\Edit.cshtml" />
-    <Content Include="Views\Catagories\Index.cshtml" />
     <Content Include="Views\Checkout\AddreddAndPayment.cshtml" />
     <Content Include="Views\Checkout\Complete.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
@@ -221,13 +213,13 @@
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\ShoppingCart\CartSummary.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
-    <Content Include="Views\StoreFront\Index.cshtml" />
+    <Content Include="Views\Accounts\LogOn.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\" />
     <Folder Include="Content\Js\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

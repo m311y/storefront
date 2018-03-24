@@ -16,7 +16,6 @@ namespace storefront.DAL
 
         }
 
-        public DbSet<Category> Categories { get; set; }
 
         public DbSet<Customer> Customers { get; set; }
 
