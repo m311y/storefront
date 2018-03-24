@@ -34,6 +34,8 @@ namespace storefront.Models
         public DateTime? LastUpdated { get; set; }
 
         public int CategoryId { get; set; }
+
+        public virtual Category Category { get; set; }
         
 
         public virtual ICollection<OrderedProduct> OrderedProducts { get; set; }
