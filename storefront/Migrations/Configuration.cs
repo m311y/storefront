@@ -2,34 +2,24 @@ namespace storefront.Migrations
 {
     using storefront.Models;
     using System.Data.Entity.Migrations;
-    internal sealed class Configuration : DbMigrationsConfiguration<storefront.DAL.StoreFrontContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DAL.Context>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(storefront.DAL.StoreFrontContext context)
+        protected override void Seed(DAL.Context context)
         {
-            context.Categories.AddOrUpdate(x => x.Id,
-        new Category() { Id = 1, Name = "Fashion" },
-        new Category() { Id = 2, Name = "Home" },
-        new Category() { Id = 3, Name = "Grocery" },
-        new Category() { Id = 4, Name = "Health" }
-        );
+            context.Categories.AddOrUpdate(r => r.Id,
+                new Category() { Id = 1, Name = "Fashion" },
+                new Category() { Id = 2, Name = "Beauty" },
+                new Category() { Id = 3, Name = "Gaming" },
+                new Category() { Id = 4, Name = "Technology" },
+                new Category() { Id = 5, Name = "Grocery" });
+           
 
-            context.Products.AddOrUpdate(x => x.Id,
-        new Product() { Id = 1, Name = "Shirt" },
-        new Product() { Id = 2, Name = "Pants" },
-        new Product() { Id = 3, Name = "Hat" },
-        new Product() { Id = 4, Name = "shoes" },
-        new Product() { Id = 5, Name = "Curtains" },
-        new Product() { Id = 6, Name = "Towels" },
-        new Product() { Id = 7, Name = "Flowers" },
-        new Product() { Id = 8, Name = "Lamp" }
-        );
+
         }
-
-       
     }
 }

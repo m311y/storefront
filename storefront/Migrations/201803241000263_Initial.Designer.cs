@@ -13,7 +13,7 @@ namespace storefront.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201803202238321_Initial"; }
+            get { return "201803241000263_Initial"; }
         }
         
         string IMigrationMetadata.Source

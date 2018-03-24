@@ -25,8 +25,8 @@ namespace storefront.Models
         public string Description { get; set; }
 
         [Display(Name = "Updated At")]
-        [Column(TypeName = "datetime2")]
-        public DateTime LastUpdated { get; set; }
+        [Column(TypeName = "datetime")]
+        public DateTime? LastUpdated { get; set; }
 
         public int CategoryId { get; set; }
 

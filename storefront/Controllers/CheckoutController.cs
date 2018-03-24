@@ -13,7 +13,7 @@ namespace storefront.Controllers
     public class CheckoutController : Controller
     {
 
-        private StoreFrontContext db = new StoreFrontContext();
+        private Context db = new Context();
         const String PromoCode = "FREE";
         public ActionResult AddressAndPayment()
         {

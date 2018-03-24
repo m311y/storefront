@@ -12,10 +12,10 @@ namespace storefront.Controllers
 {
     public class ShoppingCartController : Controller
     {
-        private StoreFrontContext db = new StoreFrontContext();
+        private Context db = new Context();
 
-        public StoreFrontContext Db { get => Db1; set => Db1 = value; }
-        public StoreFrontContext Db1 { get => db; set => db = value; }
+        public Context Db { get => Db1; set => Db1 = value; }
+        public Context Db1 { get => db; set => db = value; }
 
         public ActionResult Index()
         {

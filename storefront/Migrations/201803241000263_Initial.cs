@@ -29,7 +29,7 @@ namespace storefront.Migrations
                         Name = c.String(nullable: false, maxLength: 45),
                         Price = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Description = c.String(),
-                        LastUpdated = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
+                        LastUpdated = c.DateTime(),
                         CategoryId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
