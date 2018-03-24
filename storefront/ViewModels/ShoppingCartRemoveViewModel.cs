@@ -1,16 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using Mstorefront.Models;
+using storefront.Models;
 
-namespace storefront.ViewModels
+namespace storefront.DAL
 {
-    public class ShoppingCartRemoveViewModel
+    public class storefrontContext1 : DbContext
+
     {
-        public string Message { get; set; }
-        public decimal CartTotal { get; set; }
-        public int CartCount { get; set; }
-        public int ItemCount { get; set; }
-        public int DeleteId { get; set; }
+        public storefrontContext1() : base("storefront")
+        {
+
+        }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<CustomerOrder> CustomerOrders { get; set; }
+
+        public DbSet<OrderedProduct> Orderedproducts { get; set; }
+
+        public DbSet<Cart> Carts { get; set; }
+
     }
 }
