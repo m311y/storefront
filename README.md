@@ -1,6 +1,6 @@
 # Store Front
 
-Currently only the management aspect is implemented. 
+Currently only the product management aspect is implemented. 
 
 ## Getting Started
 
@@ -9,25 +9,17 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 You will need visual studio installed
+You will need the entity framework installed via the NuGet Packet Management Console
 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Download github repository and click on storefront.sln
+open the Package management Console and update the database with update-database
 
 ```
-until finished
+Update-Database
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
